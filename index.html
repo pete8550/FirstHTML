@@ -32,6 +32,17 @@
         font-size: 20px;
     }
 
+    .column {
+        float: left;
+        width: 50%;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
 </style>
 
 <body>
@@ -42,30 +53,31 @@
         <h2 style="font-size: 30px; font-family: monospace; text-align: center;"><u>Peters</u> side</h2>
         <hr/>
 
-        <p>Indhold</p>
+        <p style="float: right; right: 100px;">Indhold</p>
         <ul>
             <li><a href="arbejde.html">Arbejdsliv</a></li>
             <li><a href="hobby.html">Hobby</a></li>
         </ul>
     </nav>
 
-    <div style="border:1px solid lightgrey;">
+    <div class="row" style="border:1px solid lightgrey;">
 
-        <h1>Lær mig at kende</h1>
-        <p>Navn: Peter Clausen<br/>Bopæl: Nykøbing F. <br/>Født: 1994</p>
+        <div style="text-align: center; vertical-align: middle;" class="column"><h1><i>Lær mig at kende</i></h1><br><br><br>
+        <p>Navn: Peter Clausen<br><br>
+        Bopæl: Nykøbing F. 
+        <br><br>Født: Maj, 1994</p><p></p></div>
 
-        <img src="images/billede.jpg">
-
+        <div style="margin-left: 1000px;" class="column;"><img src="images/mig.jpg"></div>
     </div>
 
     <div style="text-align: center;">
 
-        <p><strong>Vidste du...</strong> at i 1994 blev Eurotunnelen indviet? <br/>at i 1994 vandt Brasilien VM i fodbold i USA?</p>
-        <h3 style="color: peru; font-size: 40px;">Selvfølgelig vidste <u>DU</u> det!...</h3>
-
-    </div>   
+        <p style="font-size: 22px;"><strong>Vidste du...</strong> at i 1994 blev Eurotunnelen indviet? <br/>at i 1994 vandt Brasilien VM i fodbold i USA?</p>
+        
+        <h3 style="padding-top: 46px; color: peru; font-size: 40px;">Selvfølgelig vidste <u>DU</u> det!...</h3>
+        <hr>
     
-    <hr/>
+    </div>   
 
 </body>
 
