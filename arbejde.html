@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>arbejdsliv</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta description="Dette er Peters arbejdsside">
+</head>
+
+<style>
+
+body {
+    background-image: url("images/workbackground.png");
+    color: grey;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    background-color: bisque;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div {
+    text-align: center;
+    background-color: bisque;
+}
+
+.audio-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+</style>
+
+<body>
+    <h1>Peters arbejdsliv</h1>
+
+    <div class="row">
+
+    <div class="column">
+        <br>
+        <hr>
+        <h2>Fortid</h2>
+        <li>Veteran avisbud</li>
+        <li>Udbringer og pizzaria-hjælper</li>
+        <li>Musikant</li>
+    </div>
+
+    <div class="column"> <hr>
+        <h2>Nutid</h2>
+        <li>100% studerende</li>
+    </div>
+
+    <div class="column">
+            <br>
+            <hr>
+        <h2>Fremtid</h2>
+        <li>Programmør?</li>
+        <li>Spiludvikler?</li>
+        <li>Freelance?</li>
+    </div>
+
+    </div>
+    
+    <hr color="grey" size="6px;">
+
+    <audio style="padding-left: 42%; padding-top: 28%;" controls>
+        <source src="audio/workSong.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>
